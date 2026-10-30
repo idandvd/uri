@@ -1,0 +1,424 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta property="og:title" content="אורי למועצת התלמידים"><meta property="og:description" content="השיר של אורי, ההבטחות שלו והכרזה שצייר"><meta property="og:image" content="https://idandvd.github.io/uri/drawing.jpg"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>אורי למועצה</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&family=Gveret+Levin&display=swap">
+<style>
+  /* Layout: a poster on paper — marker-letter title, a row of tilted sticky notes, the song, then Uri's real poster. */
+  :root {
+    --paper: #fbfaf6;
+    --ink: #24222b;
+    --ink-soft: #5b5866;
+    --outline: #2b2a30;
+    --crown: #f2d42a;
+    --pink: #d61f86;
+    --purple: #7b2fd0;
+    --card: #ffffff;
+    --rule: #e6e2d8;
+    --note-ink: #1f3a8a;
+    --note-green: #cfe8c9;
+    --note-yellow: #fbef7a;
+    --note-blue: #c6dcef;
+    --note-peach: #f6dcbc;
+    --note-white: #f7f3ee;
+    --shadow: 0 6px 14px rgba(40, 30, 10, .16);
+    --font-display: "Secular One", "Arial Hebrew", "Segoe UI", sans-serif;
+    --font-body: "Varela Round", "Arial Hebrew", "Segoe UI", sans-serif;
+    --font-hand: "Gveret Levin", "Varela Round", "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1c1b24; --ink: #f3f0e8; --ink-soft: #b9b5c4; --outline: #0e0d12;
+      --card: #26252f; --rule: #34323f; --shadow: 0 6px 16px rgba(0,0,0,.45);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1c1b24; --ink: #f3f0e8; --ink-soft: #b9b5c4; --outline: #0e0d12;
+    --card: #26252f; --rule: #34323f; --shadow: 0 6px 16px rgba(0,0,0,.45);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative; padding-top: 24px;
+    display: grid; grid-template-columns: auto 1fr; gap: 28px 40px; align-items: center;
+  }
+  .hero-text { min-width: 0; text-align: center; }
+  .photo {
+    margin: 0; width: clamp(200px, 28vw, 300px); max-width: 100%;
+    background: #fff; padding: 12px 12px 14px; box-shadow: var(--shadow);
+    border: 1px solid var(--rule); transform: rotate(3deg); position: relative;
+  }
+  .photo::before {
+    content: ""; position: absolute; top: -12px; left: 50%; width: 96px; height: 26px;
+    transform: translateX(-50%) rotate(-4deg); background: rgba(242, 212, 42, .75);
+  }
+  .photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
+  .photo figcaption { font-family: var(--font-hand); font-size: 1.6rem; color: #24222b; text-align: center; margin-top: 6px; line-height: 1.1; }
+  .hero h1 { margin: 0; font-family: var(--font-display); font-weight: 400; line-height: 1.05; text-wrap: balance; }
+  .marker {
+    display: inline-block;
+    -webkit-text-stroke: .07em var(--outline);
+    paint-order: stroke fill;
+    letter-spacing: .02em;
+  }
+  .marker span { display: inline-block; }
+  .name { font-size: clamp(4.5rem, 22vw, 10rem); }
+  .council { display: block; font-size: clamp(2rem, 8.5vw, 4.2rem); margin-top: 6px; }
+  .c1 { color: #2ea1d8; } .c2 { color: #7b2fd0; } .c3 { color: #c2272d; } .c4 { color: #1e8c3a; }
+  .c5 { color: #ee7a1c; } .c6 { color: #d61f86; } .c7 { color: #3549b8; } .c8 { color: #e3b70f; }
+  .rainbow {
+    background: repeating-linear-gradient(90deg, #e53935 0 .12em, #fb8c00 .12em .24em, #fdd835 .24em .36em, #43a047 .36em .48em, #1e88e5 .48em .6em, #8e24aa .6em .72em, #ec407a .72em .84em);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tagline {
+    margin: 18px 0 0; font-family: var(--font-display);
+    font-size: clamp(1.6rem, 6vw, 2.6rem); line-height: 1.2;
+  }
+  .crown { position: absolute; width: clamp(54px, 10vw, 90px); height: auto; pointer-events: none; z-index: 2; }
+  .crown.a { top: 0; left: 2%; transform: rotate(-12deg); }
+  .crown.b { bottom: -24px; left: 2%; transform: rotate(10deg); }
+  .crown path { fill: none; stroke: var(--crown); stroke-width: 4; stroke-linejoin: round; }
+  .crown circle { fill: var(--crown); }
+
+  /* ---------- Song ---------- */
+  .song {
+    display: grid; grid-template-columns: auto 1fr; gap: 20px 28px; align-items: center;
+    background: var(--card); border: 3px solid var(--outline); border-radius: 22px;
+    padding: 24px; box-shadow: var(--shadow);
+  }
+  .song h2, .promises h2, .poster h2 { font-family: var(--font-display); font-weight: 400; margin: 0; font-size: clamp(1.6rem, 5vw, 2.2rem); line-height: 1.2; text-wrap: balance; }
+  .play {
+    width: 96px; height: 96px; border-radius: 50%; border: 3px solid var(--outline);
+    background: var(--pink); color: #fff; cursor: pointer; display: grid; place-items: center;
+    box-shadow: 0 4px 0 var(--outline); transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .play:hover { transform: translateY(-2px); box-shadow: 0 6px 0 var(--outline); }
+  .play:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--outline); }
+  .play:focus-visible { outline: 4px solid var(--crown); outline-offset: 4px; }
+  .play svg { width: 40px; height: 40px; fill: currentColor; }
+  .song-body { min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+  .song-sub { margin: 0; color: var(--ink-soft); }
+  .bar { position: relative; height: 12px; border-radius: 6px; background: var(--rule); cursor: pointer; overflow: hidden; }
+  .bar i { position: absolute; inset: 0 0 0 auto; width: 0%; background: var(--purple); border-radius: 6px; }
+  .time { font-variant-numeric: tabular-nums; color: var(--ink-soft); font-size: .9rem; direction: ltr; text-align: right; }
+  .lyrics {
+    grid-column: 1 / -1; margin: 4px 0 0; padding-top: 16px; border-top: 2px dashed var(--rule);
+    font-family: var(--font-hand); font-size: clamp(1.5rem, 4.6vw, 2rem); line-height: 1.35; text-align: center;
+  }
+  .lyrics p { margin: 0 0 10px; }
+  .lyrics .playing { color: var(--pink); }
+
+  /* ---------- Promises ---------- */
+  .promises { display: flex; flex-direction: column; gap: 22px; }
+  .intro { margin: 0; color: var(--ink-soft); max-width: 60ch; }
+  .notes { display: flex; flex-wrap: wrap; justify-content: center; gap: 26px; padding: 8px 0; }
+  .note {
+    position: relative; width: min(100%, 290px); min-height: 220px; padding: 26px 22px 22px;
+    color: var(--note-ink); font-family: var(--font-hand); font-size: 1.6rem; line-height: 1.3;
+    box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px;
+    transition: transform .2s ease;
+  }
+  .note::before {
+    content: ""; position: absolute; top: -12px; left: 50%; width: 90px; height: 24px; transform: translateX(-50%) rotate(-3deg);
+    background: rgba(255,255,255,.55); border: 1px solid rgba(0,0,0,.06);
+  }
+  .note:hover { transform: rotate(0deg) scale(1.03); }
+  .note { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .note:focus-visible { outline: 4px solid var(--crown); outline-offset: 4px; }
+  .heart-pop { position: fixed; top: 0; left: 0; width: 56px; height: 56px; pointer-events: none; z-index: 50; }
+  .heart-pop path { fill: #e8235a; stroke: #fff; stroke-width: 2; }
+  .note .ico { width: 46px; height: 46px; }
+  .note p { margin: 0; }
+  .n1 { background: var(--note-green); transform: rotate(-3deg); color: #1d35a8; }
+  .n2 { background: var(--note-yellow); transform: rotate(2deg); color: #c4500a; }
+  .n3 { background: var(--note-blue); transform: rotate(-1.5deg); color: #17714a; }
+  .n4 { background: var(--note-peach); transform: rotate(2.5deg); color: #4d6d12; }
+  .n5 { background: var(--note-white); transform: rotate(-2deg); color: #c4127a; }
+
+  /* ---------- Poster ---------- */
+  .poster { display: flex; flex-direction: column; gap: 16px; }
+  .poster figure { margin: 0; }
+  .poster img {
+    display: block; width: 100%; max-width: 100%; height: auto; border-radius: 14px;
+    border: 3px solid var(--outline); box-shadow: var(--shadow);
+  }
+  .poster figcaption { margin-top: 10px; color: var(--ink-soft); font-size: .95rem; }
+
+  /* ---------- Vote ---------- */
+  .vote { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .vote .big {
+    font-family: var(--font-display); font-size: clamp(2.2rem, 9vw, 4rem); line-height: 1.1; margin: 0;
+    background: var(--card); color: var(--ink); border: 3px solid var(--outline); border-radius: 999px;
+    padding: 10px 36px 14px; cursor: pointer; box-shadow: 0 6px 0 var(--outline);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .vote .big:hover { transform: translateY(-2px); box-shadow: 0 8px 0 var(--outline); }
+  .vote .big:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--outline); }
+  .vote .big:focus-visible { outline: 4px solid var(--crown); outline-offset: 5px; }
+  .vote .hint { font-size: .9rem; }
+  .confetti { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 50; will-change: transform; }
+  .confetti.paper { width: 12px; height: 18px; border-radius: 2px; }
+  .confetti.crown-bit { width: 38px; height: auto; }
+
+  /* Lyrics framed by two Stars of David */
+  .lyrics-row { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; gap: clamp(10px, 4vw, 40px); }
+  .lyrics-row .lyrics { grid-column: auto; min-width: 0; }
+  .magen { flex: none; width: clamp(40px, 9vw, 76px); height: auto; }
+  .magen path { fill: none; stroke: #1f4fb8; stroke-width: 6; stroke-linejoin: round; }
+  .vote p { margin: 0; color: var(--ink-soft); }
+
+  @media (max-width: 560px) {
+    .song { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+    .song-body { width: 100%; }
+    .time { text-align: center; }
+    .crown.b { display: none; }
+    .hero { grid-template-columns: 1fr; justify-items: center; }
+    .photo { width: min(72vw, 260px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .note, .play { transition: none; }
+  }
+</style>
+
+<main class="wrap" dir="rtl" lang="he">
+
+  <header class="hero">
+    <svg class="crown a" viewBox="0 0 100 70" aria-hidden="true"><path d="M12 60 L8 18 L32 40 L50 10 L68 40 L92 18 L88 60 Z"/><circle cx="8" cy="16" r="7"/><circle cx="50" cy="8" r="7"/><circle cx="92" cy="16" r="7"/></svg>
+    <svg class="crown b" viewBox="0 0 100 70" aria-hidden="true"><path d="M12 60 L8 18 L32 40 L50 10 L68 40 L92 18 L88 60 Z"/><circle cx="8" cy="16" r="7"/><circle cx="50" cy="8" r="7"/><circle cx="92" cy="16" r="7"/></svg>
+    <figure class="photo">
+      <img src="uri.jpg" width="480" height="640" alt="אורי מחייך בחולצה לבנה">
+      <figcaption>זה אני, אורי!</figcaption>
+    </figure>
+    <div class="hero-text">
+    <h1>
+      <span class="marker name" aria-label="אורי"><span class="c1">א</span><span class="c6">ו</span><span class="c3">ר</span><span class="c2">י</span></span>
+      <span class="marker council" aria-label="למועצת התלמידים"><span class="c2">ל</span><span class="c6">מ</span><span class="c7">ו</span><span class="c5">ע</span><span class="c8">צ</span><span class="c3">ת</span> <span class="c1">ה</span><span class="c4">ת</span><span class="c7">ל</span><span class="c2">מ</span><span class="c4">י</span><span class="c6">ד</span><span class="c5">י</span><span class="c6">ם</span></span>
+    </h1>
+    <p class="tagline">ביה״ס יהיה <span class="marker rainbow">מדהים!</span></p>
+    </div>
+  </header>
+
+  <section class="song" aria-labelledby="song-title">
+    <button class="play" id="play" type="button" aria-label="נגנו את השיר">
+      <svg id="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="icon-pause" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+    </button>
+    <div class="song-body">
+      <h2 id="song-title">השיר של אורי</h2>
+      <p class="song-sub">מילים: אורי. לחצו על הכפתור ושירו איתו!</p>
+      <div class="bar" id="bar" role="slider" aria-label="מיקום בשיר" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><i id="fill"></i></div>
+      <div class="time" id="time">0:00 / 0:34</div>
+    </div>
+    <div class="lyrics-row">
+      <svg class="magen" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L90 75 L10 75 Z"/><path d="M50 94 L10 25 L90 25 Z"/></svg>
+      <div class="lyrics" id="lyrics">
+        <p>אורי למועצה, אורי למועצה</p>
+        <p>בית הספר הזה יהיה פצצה</p>
+        <p>אורי למועצה, אורי למועצה</p>
+        <p>בית הספר הזה יהיה רק פצצה!</p>
+      </div>
+      <svg class="magen" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L90 75 L10 75 Z"/><path d="M50 94 L10 25 L90 25 Z"/></svg>
+    </div>
+    <audio id="audio" src="song.mp3" preload="metadata"></audio>
+  </section>
+
+  <section class="promises" aria-labelledby="promises-title">
+    <h2 id="promises-title">מה אורי מבטיח לעשות</h2>
+    <p class="intro">אורי כתב את הרעיונות שלו על פתקים צבעוניים והדביק אותם על הכרזה. הנה הם:</p>
+    <div class="notes">
+      <article class="note n1">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 34V10l20-4v24" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="13" cy="34" r="6" fill="currentColor"/><circle cx="33" cy="30" r="6" fill="currentColor"/></svg>
+        <p>״הפסקת מוזיקה״ פעם בשבוע, עם מוזיקה כיפית שכולם אוהבים</p>
+      </article>
+      <article class="note n2">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="none" stroke="#c2272d" stroke-width="3"/><circle cx="24" cy="24" r="11" fill="none" stroke="#c2272d" stroke-width="3"/><circle cx="24" cy="24" r="4" fill="#c2272d"/></svg>
+        <p>לדאוג למשחקים מאתגרים יותר, במיוחד בימי החורף</p>
+      </article>
+      <article class="note n3">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="currentColor"/><path d="M38 28l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="currentColor"/></svg>
+        <p>לדאוג יותר לניקיון ולתחזוקה של השירותים והחצרות</p>
+      </article>
+      <article class="note n4">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l6 13 14 2-10 10 2 14-12-7-12 7 2-14L4 19l14-2z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+        <p>לדאוג ליותר לימודי חוץ</p>
+      </article>
+      <article class="note n5">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 40L32 18" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M34 6l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="currentColor"/><circle cx="14" cy="12" r="2.5" fill="currentColor"/><circle cx="40" cy="32" r="2.5" fill="currentColor"/></svg>
+        <p>יותר ״שישי קסום״ והפסקות פעילות</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="poster" aria-labelledby="poster-title">
+    <h2 id="poster-title">הכרזה שאורי צייר</h2>
+    <figure>
+      <img src="drawing.jpg" width="2000" height="1501" alt="כרזה צבעונית שאורי צייר: אורי למועצת התלמידים, ביה״ס יהיה מדהים, עם כתרים צהובים וחמישה פתקים עם הרעיונות שלו">
+      <figcaption>צויר ונכתב בידי אורי, בטושים ובהמון צבעים.</figcaption>
+    </figure>
+  </section>
+
+  <footer class="vote">
+    <svg class="crown" style="position:static;width:80px" viewBox="0 0 100 70" aria-hidden="true"><path d="M12 60 L8 18 L32 40 L50 10 L68 40 L92 18 L88 60 Z"/><circle cx="8" cy="16" r="7"/><circle cx="50" cy="8" r="7"/><circle cx="92" cy="16" r="7"/></svg>
+    <button class="big" id="vote" type="button">מצביעים <span class="marker rainbow">אורי!</span></button>
+    <p class="hint">לחצו על הכפתור 👆</p>
+    <p>ביחד נעשה את בית הספר למקום הכי כיפי שיש.</p>
+  </footer>
+
+</main>
+
+<script>
+  (function () {
+    var audio = document.getElementById('audio');
+    var btn = document.getElementById('play');
+    var iconPlay = document.getElementById('icon-play');
+    var iconPause = document.getElementById('icon-pause');
+    var bar = document.getElementById('bar');
+    var fill = document.getElementById('fill');
+    var time = document.getElementById('time');
+    var lines = document.querySelectorAll('#lyrics p');
+
+    function fmt(s) {
+      if (!isFinite(s)) s = 0;
+      var m = Math.floor(s / 60), r = Math.floor(s % 60);
+      return m + ':' + (r < 10 ? '0' : '') + r;
+    }
+    function setIcon(playing) {
+      iconPlay.hidden = playing;
+      iconPause.hidden = !playing;
+      btn.setAttribute('aria-label', playing ? 'עצרו את השיר' : 'נגנו את השיר');
+    }
+    function update() {
+      var d = audio.duration || 34;
+      var pct = Math.min(100, (audio.currentTime / d) * 100);
+      fill.style.width = pct + '%';
+      bar.setAttribute('aria-valuenow', Math.round(pct));
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(d);
+      var active = audio.paused && audio.currentTime === 0 ? -1 : Math.floor((pct / 100) * lines.length * 2) % lines.length;
+      lines.forEach(function (p, i) { p.classList.toggle('playing', i === active); });
+    }
+
+    btn.addEventListener('click', function () {
+      if (audio.paused) {
+        var p = audio.play();
+        if (p && p.catch) p.catch(function () { setIcon(false); });
+      } else {
+        audio.pause();
+      }
+    });
+    audio.addEventListener('play', function () { setIcon(true); });
+    audio.addEventListener('pause', function () { setIcon(false); });
+    audio.addEventListener('ended', function () { audio.currentTime = 0; update(); });
+    audio.addEventListener('timeupdate', update);
+    audio.addEventListener('loadedmetadata', update);
+
+    function seek(clientX) {
+      var r = bar.getBoundingClientRect();
+      var pct = (r.right - clientX) / r.width; // RTL: progress grows from the right
+      pct = Math.max(0, Math.min(1, pct));
+      if (audio.duration) audio.currentTime = pct * audio.duration;
+    }
+    bar.addEventListener('click', function (e) { seek(e.clientX); });
+
+    // Crown and paper confetti for the vote button
+    var colors = ['#e53935', '#fb8c00', '#fdd835', '#43a047', '#1e88e5', '#8e24aa', '#ec407a'];
+    var crownSvg = '<svg viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg"><path d="M12 60 L8 18 L32 40 L50 10 L68 40 L92 18 L88 60 Z" fill="#fdd835" stroke="#c99a00" stroke-width="5" stroke-linejoin="round"/><circle cx="8" cy="16" r="7" fill="#fdd835"/><circle cx="50" cy="8" r="7" fill="#fdd835"/><circle cx="92" cy="16" r="7" fill="#fdd835"/></svg>';
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function burst(fromEl) {
+      var r = fromEl.getBoundingClientRect();
+      var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      var count = reduce ? 14 : 90;
+      for (var i = 0; i < count; i++) {
+        var isCrown = i % 6 === 0;
+        var el;
+        if (isCrown) {
+          el = document.createElement('div');
+          el.className = 'confetti crown-bit';
+          el.innerHTML = crownSvg;
+        } else {
+          el = document.createElement('div');
+          el.className = 'confetti paper';
+          el.style.background = colors[i % colors.length];
+        }
+        document.body.appendChild(el);
+        var angle = Math.random() * Math.PI * 2;
+        var power = 160 + Math.random() * 320;
+        var dx = Math.cos(angle) * power;
+        var up = -Math.abs(Math.sin(angle) * power) - 140;
+        var fall = window.innerHeight * (0.5 + Math.random() * 0.6);
+        var spin = (Math.random() - 0.5) * 900;
+        var dur = reduce ? 900 : 1600 + Math.random() * 1200;
+        var anim = el.animate([
+          { transform: 'translate(' + cx + 'px,' + cy + 'px) rotate(0deg)', opacity: 1 },
+          { transform: 'translate(' + (cx + dx * 0.7) + 'px,' + (cy + up) + 'px) rotate(' + spin / 2 + 'deg)', opacity: 1, offset: 0.35 },
+          { transform: 'translate(' + (cx + dx) + 'px,' + (cy + up + fall) + 'px) rotate(' + spin + 'deg)', opacity: 0 }
+        ], { duration: dur, easing: 'cubic-bezier(.2,.6,.4,1)' });
+        anim.onfinish = (function (node) { return function () { node.remove(); }; })(el);
+      }
+    }
+    document.getElementById('vote').addEventListener('click', function (e) { burst(e.currentTarget); });
+
+    // A heart pops out of a note when it is tapped
+    var heartSvg = '<path d="M28 50 C10 37 3 27 3 17 C3 9 9 3 16.5 3 C21.5 3 25.5 6 28 10 C30.5 6 34.5 3 39.5 3 C47 3 53 9 53 17 C53 27 46 37 28 50 Z"/>';
+    function popHeart(x, y) {
+      var big = 0.9 + Math.random() * 0.5;
+      var drift = (Math.random() - 0.5) * 80;
+      var tilt = (Math.random() - 0.5) * 40;
+      var h = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      h.setAttribute('viewBox', '0 0 56 56');
+      h.setAttribute('class', 'heart-pop');
+      h.innerHTML = heartSvg;
+      document.body.appendChild(h);
+      var x0 = x - 28, y0 = y - 28;
+      var frames = reduce
+        ? [{ transform: 'translate(' + x0 + 'px,' + y0 + 'px) scale(1)', opacity: 1 },
+           { transform: 'translate(' + x0 + 'px,' + y0 + 'px) scale(1)', opacity: 0 }]
+        : [{ transform: 'translate(' + x0 + 'px,' + y0 + 'px) scale(.2) rotate(0deg)', opacity: 0 },
+           { transform: 'translate(' + x0 + 'px,' + (y0 - 20) + 'px) scale(' + (big * 1.3) + ') rotate(' + tilt + 'deg)', opacity: 1, offset: .25 },
+           { transform: 'translate(' + (x0 + drift) + 'px,' + (y0 - 170) + 'px) scale(' + big + ') rotate(' + (-tilt) + 'deg)', opacity: 0 }];
+      var a = h.animate(frames, { duration: reduce ? 700 : 1100, easing: 'cubic-bezier(.2,.7,.3,1)' });
+      a.onfinish = function () { h.remove(); };
+    }
+    document.querySelectorAll('.note').forEach(function (note) {
+      note.setAttribute('tabindex', '0');
+      note.addEventListener('click', function (e) {
+        var x = e.clientX, y = e.clientY;
+        if (!x && !y) { var r = note.getBoundingClientRect(); x = r.left + r.width / 2; y = r.top + r.height / 2; }
+        popHeart(x, y);
+      });
+      note.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          var r = note.getBoundingClientRect();
+          popHeart(r.left + r.width / 2, r.top + r.height / 2);
+        }
+      });
+    });
+    bar.addEventListener('keydown', function (e) {
+      if (!audio.duration) return;
+      if (e.key === 'ArrowLeft') { audio.currentTime = Math.min(audio.duration, audio.currentTime + 3); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { audio.currentTime = Math.max(0, audio.currentTime - 3); e.preventDefault(); }
+    });
+  })();
+</script>
+</body></html>
